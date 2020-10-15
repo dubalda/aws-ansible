@@ -16,7 +16,7 @@ RUN set +euo pipefail && \
       less \
       ansible && \
     dnf clean all && \
-    pip3 install --no-cache-dir botocore boto3 yq && \
+    pip3 install --no-cache-dir boto botocore boto3 yq && \
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
     gpg --import /tmp/amazon-public-key && \
     curl -o awscliv2.sig https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip.sig && \

@@ -13,6 +13,7 @@ RUN set +euo pipefail && \
       unzip \
       python3-pip \
       groff \
+      less \
       ansible && \
     dnf clean all && \
     pip3 install --no-cache-dir yq && \

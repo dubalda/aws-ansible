@@ -13,6 +13,7 @@ RUN set +euo pipefail && \
       unzip \
       python3-pip \
       groff \
+      openssh-clients \
       less && \
     dnf clean all && \
     pip3 install --no-cache-dir boto botocore boto3 yq ansible && \
